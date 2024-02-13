@@ -64,6 +64,7 @@
 @import url("../blocks/karkasdesign/__text/karkasdesign__text.css");
 @import url("../blocks/karkasdesign/__list/karkasdesign__list.css");
 @import url("../blocks/reading/__wrapper/reading__wrapper.css");
+@import url("../blocks/reading/reading.css");
 
 @import url("../blocks/promo/__heading/promo__heading.css");
 @import url("../blocks/promo/__heading-text/promo__heading-text.css");
