@@ -1,0 +1,9 @@
+.gallery__area_right-bottom {
+    grid-area: gallery__area_right-bottom;
+    width: 588px;
+    height: 280px;
+    margin-left: 13px;
+    background-image: url('../../../../images/house_9.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}

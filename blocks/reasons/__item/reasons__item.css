@@ -1,0 +1,11 @@
+.reasons__item {
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 768px) {
+    .reasons__item {
+        flex-direction: row;
+        width: 290px;
+    }
+}

@@ -1,0 +1,17 @@
+.content__video {
+    width: 98%;
+    position: absolute;
+    top: 110%;
+}
+
+@media screen and (max-width: 1190px) {
+    .content__video {
+        top: 105%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .content__video {
+        top: 100%;
+    }
+}

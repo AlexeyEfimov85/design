@@ -1,0 +1,5 @@
+@media screen and (max-width: 1190px) {
+    .content__heading {
+        max-width: 315px;
+    }
+}

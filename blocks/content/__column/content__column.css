@@ -1,0 +1,11 @@
+@media screen and (max-width: 1190px) {
+    .content__column {
+        max-width: 330px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .content__column {
+        max-width: 343px;
+    }
+}

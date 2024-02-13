@@ -1,0 +1,19 @@
+.content {
+    background-image: url('../../images/backgr_content.png');
+    padding: 100px 0 240px;
+    position: relative;
+}
+
+
+@media screen and (max-width: 1190px) {
+    .content {
+        background-image: url('../../images/backgr_content_small.png');
+        padding: 0 0 90px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .content {
+        padding: 0 0 50px;
+    }
+}

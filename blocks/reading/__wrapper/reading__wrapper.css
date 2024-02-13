@@ -1,0 +1,11 @@
+.reading__wrapper {
+    display: flex;
+    gap: 32px;
+}
+
+@media screen and (max-width: 1190px) {
+    .reading__wrapper {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}

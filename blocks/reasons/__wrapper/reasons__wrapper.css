@@ -1,0 +1,19 @@
+.reasons__wrapper {
+    display: flex;
+    margin-top: 100px;
+    align-items: center;
+}
+
+@media screen and (max-width: 1190px) {
+    .reasons__wrapper {
+        flex-direction: column;
+        margin-top: 32px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .reasons__wrapper {
+        flex-direction: column;
+        margin-top: 24px;
+    }
+}

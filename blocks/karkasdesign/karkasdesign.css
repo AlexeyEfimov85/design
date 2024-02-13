@@ -1,0 +1,9 @@
+.karkasdesign {
+    padding: 120px 0 120px;
+}
+
+@media screen and (max-width: 1190px) {
+    .karkasdesign  {
+        padding: 90px 0 100px;
+    }
+}

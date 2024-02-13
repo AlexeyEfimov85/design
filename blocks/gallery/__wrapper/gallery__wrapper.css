@@ -1,0 +1,16 @@
+.gallery__wrapper {
+    display: grid;
+    gap: 12px;
+    grid-template-columns: 284px 272px 308px 281px;
+    grid-template-rows:  200px 220px 280px;
+    grid-template-areas:
+        "gallery__area_left gallery__area_center-small gallery__area_center-small-1 gallery__area_right"
+        "gallery__area_left gallery__area_center gallery__area_center gallery__area_right"
+        "gallery__area_left-bottom gallery__area_left-bottom gallery__area_right-bottom gallery__area_right-bottom";
+}
+
+@media screen and (max-width: 1190px) {
+    .gallery__wrapper {
+        display: none;
+    }
+}

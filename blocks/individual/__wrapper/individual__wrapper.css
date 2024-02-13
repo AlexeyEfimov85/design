@@ -1,0 +1,21 @@
+.individual__wrapper {
+    display: flex;
+    gap: 36px;
+}
+
+@media screen and (max-width: 1190px) {
+    .individual__wrapper {
+        gap: 12px;
+        position: relative;
+        transform: translateX(-32%);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .individual__wrapper {
+        gap: 12px;
+        position: relative;
+        transform: translateX(0);
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,23 @@
+.projectcard__heading {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 34px;
+    color: #353f47;
+    margin: 0 0 32px 0;
+}
+
+@media screen and (max-width: 1190px) {
+    .projectcard__heading {
+        font-size: 20px;
+        line-height: 27px;
+        letter-spacing: -0.02em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .projectcard__heading {
+        font-size: 18px;
+        line-height: 24.5px;
+        letter-spacing: -0.02em;
+    }
+}
