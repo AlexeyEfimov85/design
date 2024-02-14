@@ -1,6 +1,6 @@
 .content {
     background-image: url('../../images/backgr_content.png');
-    padding: 100px 0 240px;
+    padding: 90px 0 280px;
     position: relative;
 }
 
@@ -8,12 +8,13 @@
 @media screen and (max-width: 1190px) {
     .content {
         background-image: url('../../images/backgr_content_small.png');
-        padding: 0 0 90px;
+        padding: 1px 0 90px;
+        margin-top: 100px;
     }
 }
 
 @media screen and (max-width: 768px) {
     .content {
-        padding: 0 0 50px;
+        padding: 1px 0 50px;
     }
 }

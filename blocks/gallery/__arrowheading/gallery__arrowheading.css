@@ -1,0 +1,9 @@
+.gallery__arrowheading {
+    margin-bottom: 29px;
+}
+
+@media screen and (max-width: 768px) {
+    .gallery__arrowheading {
+        margin-top: 120px;
+    }
+}

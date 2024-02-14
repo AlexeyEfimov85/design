@@ -31,8 +31,10 @@
 @import url("../blocks/content/__subheading/content__subheading.css");
 @import url("../blocks/content/__link/content__link.css");
 @import url("../blocks/content/__preview/content__preview.css");
+@import url("../blocks/content/__preview/_mobile/content__preview_mobile.css");
 @import url("../blocks/content/__video/content__video.css");
 @import url("../blocks/content/__lens/content__lens.css");
+@import url("../blocks/content/__arrowheading/content__arrowheading.css");
 @import url("../blocks/gallery/gallery.css");
 @import url("../blocks/gallery/__wrapper/gallery__wrapper.css");
 @import url("../blocks/gallery/__area/_left/gallery__area_left.css");
@@ -44,9 +46,11 @@
 @import url("../blocks/gallery/__area/_right-bottom/gallery__area_right-bottom.css");
 @import url("../blocks/gallery/__photo/gallery__photo.css");
 @import url("../blocks/gallery/__wrapper/_mobile/gallery__wrapper_mobile.css");
+@import url("../blocks/gallery/__arrowheading/gallery__arrowheading.css");
 @import url("../blocks/individual/individual.css");
 @import url("../blocks/individual/__heading/individual__heading.css");
 @import url("../blocks/individual/__subheading/individual__subheading.css");
+@import url("../blocks/individual/__swiperdisable/individual__swiperdisable.css");
 @import url("../blocks/projectcard/projectcard.css");
 @import url('../blocks/projectcard/__heading/projectcard__heading.css');
 @import url("../blocks/projectcard/__list/projectcard__list.css");
@@ -65,54 +69,11 @@
 @import url("../blocks/karkasdesign/__list/karkasdesign__list.css");
 @import url("../blocks/reading/__wrapper/reading__wrapper.css");
 @import url("../blocks/reading/reading.css");
-
-@import url("../blocks/promo/__heading/promo__heading.css");
-@import url("../blocks/promo/__heading-text/promo__heading-text.css");
-@import url("../blocks/promo/__content/promo__content.css");
-@import url("../blocks/promo/__column/promo__column.css");
-@import url("../blocks/promo/__item/promo__item.css");
-@import url("../blocks/promo/__text/promo__text.css");
 @import url("../blocks/promo/__arrow/promo__arrow.css");
-@import url("../blocks/promo/__image/promo__image.css");
-@import url("../blocks/promo/promo.css");
-@import url("../blocks/domokomplekt/domokomplekt.css");
-@import url("../blocks/domokomplekt/__background/domokomplekt__background.css");
-@import url("../blocks/domokomplekt/__content/domokomplekt__content.css");
-@import url("../blocks/domokomplekt/__cards/domokomplekt__cards.css");
-@import url("../blocks/domokomplekt/__card/card.css");
-@import url("../blocks/domokomplekt/__info/domokomplekt__info.css");
-@import url("../blocks/domokomplekt/__heading/domokomplekt__heading.css");
-@import url("../blocks/domokomplekt/__text/domokomplekt__text.css");
-@import url("../blocks/domokomplekt/__text/_main/domokomplekt__text_main");
-@import url("../blocks/domokomplekt/__subheading/domokomplekt__subheading.css");
-@import url("../blocks/domokomplekt/__cards-column/domokomplekt__cards-column-left.css");
-@import url("../blocks/domokomplekt/__cards-column/domokomplekt__cards-column-right.css");
-@import url("../blocks/domokomplekt/__cards-column/domokomplekt__cards-column.css");
-@import url("../blocks/metropolis/__text/metropolis__text.css");
-@import url("../blocks/metropolis/__image/metropolis__image.css");
-@import url("../blocks/metropolis/metropolis.css");
-@import url("../blocks/karkas/karkas.css");
-@import url("../blocks/karkas/__lens/karkas__lens.css");
-@import url("../blocks/karkas/__container/karkas__container.css");
-@import url("../blocks/karkas/__info/karkas__info.css");
-@import url("../blocks/karkas/__heading/karkas__heading.css");
-@import url("../blocks/karkas/__text/karkas__text.css");
-@import url("../blocks/karkas/__list/karkas__list.css");
-@import url("../blocks/karkas/__photo/karkas__photo.css");
-@import url("../blocks/karkas/__features/karkas__features.css");
-@import url("../blocks/karkas/__feature/karkas__feature.css");
-@import url("../blocks/karkas/__feature-icon/karkas__feature-icon.css");
-@import url("../blocks/karkas/__text/_feature/karkas__text_feature.css");
-@import url("../blocks/karkas/__text/_feature-long/karkas__text_feature-long.css");
-@import url("../blocks/independent/__heading/independent__heading.css");
-@import url("../blocks/independent/__wrapper/independent__wrapper.css");
-@import url("../blocks/independent/__image/independent__image.css");
-@import url("../blocks/independent/__container/independent__container.css");
-@import url("../blocks/examples/__heading-text/examples__heading-text.css");
-@import url("../blocks/examples/__heading/examples__heading.css");
-@import url("../blocks/examples/__photo/examples__photo.css");
-@import url("../blocks/examples/examples.css");
-@import url("../blocks/examples/__image/examples__image.css");
+
+
+
+
 
 
 

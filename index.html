@@ -9,6 +9,39 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <style>
+/*       html,
+      body {
+        position: relative;
+        height: 100%;
+      }
+
+      body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+      } */
+
+      .swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        text-align: left;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+      }
+    </style>
   </head>
 
   <body class="root">
@@ -157,7 +190,7 @@
       <section class="content">
         <div class="content__lens"></div>
         <div class="container">
-          <div class="arrowheading">
+          <div class="arrowheading content__arrowheading">
             <img
               src="./images/arrow-right.svg"
               alt="стрелка"
@@ -237,20 +270,25 @@
                 alt="превью видеофайла"
                 class="content__preview"
               />
+              <img
+              src="./images/video_preview_mobile.png"
+              alt="превью видеофайла"
+              class="content__preview_mobile"
+            />
             </a>
           </div>
         </div>
       </section>
       <section class="gallery">
         <div class="container">
-          <div class="arrowheading">
+          <div class="arrowheading gallery__arrowheading">
             <img
               src="./images/arrow-right.svg"
               alt="стрелка"
               class="promo__arrow"
             />
             <p class="arrowheading__text content__heading">
-              Дома, построенные по проектам Строй и Живи
+              Дома, построенные по&nbsp;проектам Строй и Живи
             </p>
             <img
               src="./images/arrow-left.svg"
@@ -329,7 +367,7 @@
                   Проект дома переходит в вашу собственность
                 </li>
               </ul>
-              <p class="projectcard__price">550 ₽ кв.м</p>
+              <p class="projectcard__price">550 &#x20bd; кв.м</p>
               <p class="projectcard__text">
                 Метраж рассчитывается поэтапно по наружному контуру конструкций,
                 включая террасы/крыльца. Мин. стоимость проекта 24 000 ₽
@@ -355,7 +393,7 @@
                   Проект дома переходит в вашу собственность
                 </li>
               </ul>
-              <p class="projectcard__price">1 000 ₽ кв.м</p>
+              <p class="projectcard__price">1 000 &#x20bd; кв.м</p>
               <p class="projectcard__text">
                 Метраж рассчитывается поэтапно по наружному контуру конструкций,
                 включая террасы/крыльца. Мин. стоимость проекта 33 000 ₽
@@ -379,7 +417,7 @@
                   Проект дома переходит в вашу собственность
                 </li>
               </ul>
-              <p class="projectcard__price">1 200 ₽ кв.м</p>
+              <p class="projectcard__price">1 200 &#x20bd; кв.м</p>
               <p class="projectcard__text">
                 Метраж рассчитывается поэтапно по наружному контуру конструкций,
                 включая террасы/крыльца. Мин. стоимость проекта 42 000 ₽
@@ -390,6 +428,97 @@
             </div>
           </div>
         </div>
+        <div class="individual__swiperdisable">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide" style="margin-right: 0;">
+              <div class="projectcard">
+                <p class="projectcard__heading">Стандарт</p>
+                <ul class="projectcard__list">
+                  <li class="projectcard__listitem">Эскизный проект</li>
+                  <li class="projectcard__listitem">Конструктивный раздел</li>
+                  <li class="projectcard__listitem">
+                    Файл – bimx эскизного раздела
+                  </li>
+                  <li class="projectcard__listitem">
+                    Файл – bimx конструктивногораздела
+                  </li>
+                  <li
+                    class="projectcard__listitem projectcard__listitem_inactive"
+                  >
+                    Проект дома переходит в вашу собственность
+                  </li>
+                </ul>
+                <p class="projectcard__price">550 &#x20bd; кв.м</p>
+                <p class="projectcard__text">
+                  Метраж рассчитывается поэтапно по наружному контуру
+                  конструкций, включая террасы/крыльца. Мин. стоимость проекта
+                  24 000 ₽
+                </p>
+                <button class="projectcard__button" type="button">
+                  Заказать проект
+                </button>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="projectcard projectcard_green">
+                <p class="projectcard__heading">Оптимальный</p>
+                <ul class="projectcard__list">
+                  <li class="projectcard__listitem">Эскизный проект</li>
+                  <li class="projectcard__listitem">Конструктивный раздел</li>
+                  <li class="projectcard__listitem">
+                    Файл – bimx эскизного раздела
+                  </li>
+                  <li class="projectcard__listitem">
+                    Файл – bimx конструктивногораздела
+                  </li>
+                  <li
+                    class="projectcard__listitem projectcard__listitem_inactive"
+                  >
+                    Проект дома переходит в вашу собственность
+                  </li>
+                </ul>
+                <p class="projectcard__price">1 000 &#x20bd; кв.м</p>
+                <p class="projectcard__text">
+                  Метраж рассчитывается поэтапно по наружному контуру
+                  конструкций, включая террасы/крыльца. Мин. стоимость проекта
+                  33 000 ₽
+                </p>
+                <button class="projectcard__button" type="button">
+                  Заказать проект
+                </button>
+              </div>
+            </div>
+            <div class="swiper-slide ">
+              <div class="projectcard projectcard_unique">
+                <p class="projectcard__heading">Уникальный</p>
+                <ul class="projectcard__list">
+                  <li class="projectcard__listitem">Эскизный проект</li>
+                  <li class="projectcard__listitem">Конструктивный раздел</li>
+                  <li class="projectcard__listitem">
+                    Файл – bimx эскизного раздела
+                  </li>
+                  <li class="projectcard__listitem">
+                    Файл – bimx конструктивногораздела
+                  </li>
+                  <li class="projectcard__listitem">
+                    Проект дома переходит в вашу собственность
+                  </li>
+                </ul>
+                <p class="projectcard__price">1 200 &#x20bd; кв.м</p>
+                <p class="projectcard__text">
+                  Метраж рассчитывается поэтапно по наружному контуру
+                  конструкций, включая террасы/крыльца. Мин. стоимость проекта
+                  42 000 ₽
+                </p>
+                <button class="projectcard__button" type="button">
+                  Заказать проект
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       </section>
       <section class="karkasdesign">
         <div class="container">
@@ -514,318 +643,26 @@
           </div>
         </div>
       </section>
-      <!--  <section class="promo">
-        <div class="container">
-          <div class="promo__heading">
-            <img src="../domokomplekt/images/arrow-right.svg" alt="стрелка" class="promo__arrow"/>
-            <p class="promo__heading-text">
-              Почему стоит заказать домокомплект в&nbsp;Строй и Живи
-            </p>
-            <img src="../domokomplekt/images/arrow-left.svg" alt="стрелка" class="promo__arrow"/>
-          </div>
-          <div class="promo__content">
-            <div class="promo__column">
-              <div class="promo__item">
-                <img
-                  class="promo__image"
-                  src="../domokomplekt/images/promo_icons/like.svg"
-                  alt="лайк"
-                />
-                <p class="promo__text">Внутренний отдел контроля качества</p>
-              </div>
-              <div class="promo__item">
-                <img
-                  class="promo__image"
-                  src="../domokomplekt/images/promo_icons/factory.svg"
-                  alt="завод"
-                />
-                <p class="promo__text">
-                  Заводское изготовление
-                  в соответствии с проектом
-                </p>
-              </div>
-              <div class="promo__item">
-                <img
-                  class="promo__image"
-                  src="../domokomplekt/images/promo_icons/delivery.svg"
-                  alt="доставка"
-                />
-                <p class="promo__text">Отправка ТК в любую точку мира</p>
-              </div>
-              <div class="promo__item">
-                <img
-                  class="promo__image"
-                  src="../domokomplekt/images/promo_icons/price.svg"
-                  alt="кошелек"
-                />
-                <p class="promo__text">Выгодные цены</p>
-              </div>
-            </div>
-            <div class="promo__column">
-              <div class="promo__item">
-                <img
-                  class="promo__image"
-                  src="../domokomplekt/images/promo_icons/easy.svg"
-                  alt="пазл"
-                />
-                <p class="promo__text">Простота сборки</p>
-              </div>
-              <div class="promo__item">
-                <img
-                  class="promo__image"
-                  src="../domokomplekt/images/promo_icons/complex.svg"
-                  alt="машинка"
-                />
-                <p class="promo__text">Комплексная поставка материалов</p>
-              </div>
-              <div class="promo__item">
-                <img
-                  class="promo__image"
-                  src="../domokomplekt/images/promo_icons/fast.svg"
-                  alt="часы"
-                />
-                <p class="promo__text">
-                  От договора до отгрузки материалов - от 5 дней
-                </p>
-              </div>
-              <div class="promo__item">
-                <img
-                  class="promo__image"
-                  src="../domokomplekt/images/promo_icons/production.svg"
-                  alt="станок"
-                />
-                <p class="promo__text">Производство сложных конструкций</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      
-     <section class="domokomplekt">
-        <img
-          src="../domokomplekt/images/domokomplekt/bakcgr.png"
-          alt="фон"
-          class="domokomplekt__background"
-        />
-        <div class="domokomplekt__background"></div>
-        <div class="container">
-          <div class="domokomplekt__content">
-            <div class="domokomplekt__cards">
-              <div class="domokomplekt__cards-column">
-                <img
-                  src="../domokomplekt/images/domokomplekt/photo_1.jpg"
-                  alt="доски"
-                  class="domokomplekt__card domokomplekt__cards-column-left"
-                />
-                <img
-                  src="../domokomplekt/images/domokomplekt/photo_2.jpg"
-                  alt="доски"
-                  class="domokomplekt__card domokomplekt__cards-column-left"
-                />
-              </div>
-              <div class="domokomplekt__cards-column">
-                <img
-                  src="../domokomplekt/images/domokomplekt/photo__3.jpg"
-                  alt="доски"
-                  class="domokomplekt__card domokomplekt__cards-column-right"
-                />
-                <img
-                  src="../domokomplekt/images/domokomplekt/photo__4.jpg"
-                  alt="доски"
-                  class="domokomplekt__card domokomplekt__cards-column-right"
-                />
-                <img
-                  src="../domokomplekt/images/domokomplekt/photo__5.jpg"
-                  alt="доски"
-                  class="domokomplekt__card domokomplekt__cards-column-right"
-                />
-              </div>
-            </div>
-            <article class="domokomplekt__info">
-              <h2 class="domokomplekt__heading">Домокомплект</h2>
-              <p class="domokomplekt__text_main">
-                Что такое домокомплект? Это подготовленный набор строительных
-                комплектующих, из которого возводится каркас будущего дома. Все
-                элементы конструкции производятся в заводских условиях, на
-                основе четкого проектного расчета. Каждая деталь имеет свое
-                назначение и маркировку. Полный комплект поставляется на
-                участок, где происходит его сборка подобно конструктору. Готовые
-                домокомплекты домов уже давно зарекомендовали себя как надежный
-                и быстрый способ загородного строительства.
-              </p>
-              <p class="domokomplekt__subheading">
-                Среди явных их преимуществ выделяется:
-              </p>
-              <p class="domokomplekt__text">
-                Быстрое возведение за несколько месяцев. Нет необходимости
-                прекращать стройку зимой, ждать усадки или хорошей погоды;
-              </p>
-              <p class="domokomplekt__text">
-                Фиксированная цена. Стоимость рассчитывается на основании
-                проекта и не меняется в процессе сборки;
-              </p>
-              <p class="domokomplekt__text">
-                Надежность материалов. Все деревянные элементы изготавливаются
-                на заводе домокомплектов, поэтому проверены на качество и
-                отвечают требованиям безопасности и экологичности;
-              </p>
-              <p class="domokomplekt__text">
-                Высокая энергоэффективность. Применение качественных утеплителей
-                позволяет значительно сэкономить на обогреве постройки;
-              </p>
-              <p class="domokomplekt__text">
-                Долгий срок эксплуатации. Каркасный домокомплект может служить
-                не один десяток лет;
-              </p>
-            </article>
-          </div>
-        </div>
-      </section>
-      <section class="metropolis">
-        <div class="container">
-          <div class="wrapper">
-            <p class="metropolis__text">
-              Почти каждый житель мегаполиса задумывался о строительстве
-              загородного дома. Если раньше на это уходили года, то сейчас
-              современные методы позволяют значительно ускорить процесс. При
-              этом не теряются технические и эксплуатационные свойства. Купить
-              готовый домокомплект с завода в СПб и ЛО не составит труда. Но
-              необходимо учитывать климатические особенности местности, тип
-              грунта, надежность фирмы-производителя и качество применяемых
-              материалов. Только с соблюдением всех нюансов можно построить
-              надежное и крепкое строение.
-            </p>
-            <img
-              src="./images/house_blender_vector.svg"
-              alt="изображение дома"
-              class="metropolis__image"
-            />
-          </div>
-        </div>
-      </section>
-      <section class="karkas">
-        <div class="karkas__lens"></div>
-        <div class="container karkas__container">
-          <article class="karkas__info">
-            <h2 class="karkas__heading">Домокомплект каркасного дома</h2>
-            <p class="karkas__text">
-              Строительство с использованием готового домокомплекта, цена
-              которого ниже варианта классической застройки, стало очень
-              востребованным в нашей стране. Почти в каждом дачном поселке можно
-              увидеть стройные каркасы будущих домов. Причем различаются они не
-              только архитектурой, но и методом их возведения:
-            </p>
-            <ul class="karkas__list">
-              <li class="karkas__text">
-                Канадская технология. Сборка конструкции происходит с
-                использованием СИП-панелей. В их основе лежит
-                древесно-стружечная плита и полистирол. Такие дома получают
-                высокую прочность, морозо- и влагоустойчивость.
-              </li>
-              <li class="karkas__text">
-                Финские дома строятся только из натуральных и экологичных
-                материалов. Элементы конструкции изготавливаются из дерева,
-                базальтового утеплителя или эковаты. Материалы обладают высокой
-                шумоизоляцией и большой энергоэффективностью.
-              </li>
-              <li class="karkas__text">
-                Фахверковая технология. В основе лежит прочный силовой каркас из
-                клееного бруса – надежный и долговечный материал, который легко
-                монтируется. Для заполнения пространства используется
-                минеральная вата, цементно-стружечные плиты и стеклопакеты.
-              </li>
-            </ul>
-          </article>
-          <div class="karkas__content">
-            <div class="karkas__features">
-              <div class="karkas__feature">
-                <img src="./images/karkas_feature_icon_1.svg" alt="пазл" class="karkas__feature-icon"/><span
-                  class="karkas__text karkas__text_feature"
-                  >Простота
-                  сборки</span
-                >
-              </div>
-              <div class="karkas__feature">
-                <img src="./images/karkas_feature_icon_2.svg" alt="лайк" class="karkas__feature-icon"/><span
-                  class="karkas__text karkas__text_feature"
-                  >Контроль
-                  качества</span
-                >
-              </div>
-              <div class="karkas__feature">
-                <img
-                  src="./images/karkas_feature_icon_3.svg"
-                  alt="станок" class="karkas__feature-icon"
-                /><span class="karkas__text karkas__text_feature-long"
-                  >Производство&nbsp;сложных конструкций</span
-                >
-              </div>
-            </div>
-            <img
-              src="./images/house_photo.jpg"
-              alt="фото готового дома"
-              class="karkas__photo"
-            />
-          </div>
-        </div>
-      </section>
-      <section class="independent">
-        <div class="container">
-          <div class=" independent__container">
-            <img
-              src="./images/house_vrazreze.png"
-              alt="изображение дома"
-              class="independent__image"
-            />
-            <div class="independent__wrapper">
-              <p class="independent__heading">
-                Домокомплект<br />
-                для самостоятельной сборки
-              </p>
-              <p class="independent__text">
-                Удобный вариант для тех, кто хочет построить загородный дом
-                своими силами – каркасный домокомплект для самостоятельной
-                сборки. Не нужно искать и подбирать материалы на рынке и
-                опасаться за их качество. В заводском наборе предусмотрены все
-                комплектующие, просчитаны их размеры и крепежи. Все элементы уже
-                напилены и обработаны специальными антисептиками.
-              </p>
-              <p class="independent__text">
-                Чтобы будущий дом радовал владельцев долгие годы, необходимо
-                выбирать для строительства домокомплекты от проверенного
-                производителя. В зависимость от проекта и технологии, они могут
-                содержат разный набор составляющих. На сайте компании «Строй и
-                Живи» представлен широкий выбор типовых решений: от экономичным
-                до премиум-класса. Все проекты полностью адаптированы под наш
-                климат и рассчитаны как на сезонное, так и на постоянное
-                проживание.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="examples">
-        <div class="container">
-        <div class="examples__heading">
-          <img src="../domokomplekt/images/arrow-right.svg" alt="стрелка" class="promo__arrow"/>
-          <p class="examples__heading-text">
-            Примеры отгруженных домокомплектов
-          </p>
-          <img src="../domokomplekt/images/arrow-left.svg" alt="стрелка" class="promo__arrow"/>
-        </div>
-      </div>
-          <div class="examples__photo">
-            <img src="./images/example_1.png" alt="фото дома" class="examples__image"/>
-            <img src="./images/example_1.png" alt="фото дома" class="examples__image"/>
-            <img src="./images/example_1.png" alt="фото дома" class="examples__image"/>
-            <img src="./images/example_1.png" alt="фото дома" class="examples__image"/>
-          </div>
-      </section> -->
     </main>
+    <!-- Slider main container -->
+
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
     <script>
       Fancybox.bind("[data-fancybox]", {
         // Your custom options
+      });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 2.9,
+        initialSlide: 1,
+        centeredSlide: true,
+        spaceBetween: 12,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
       });
     </script>
   </body>

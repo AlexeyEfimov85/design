@@ -1,0 +1,9 @@
+.content__preview_mobile {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .content__preview_mobile {
+        display: block;
+    }
+}
