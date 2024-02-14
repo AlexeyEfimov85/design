@@ -1,6 +1,5 @@
 .individual__swiperdisable {
-    min-width: 1131px;
-    max-width: 1131px; 
+    max-width: 100vw 
 }
 
 @media screen and (min-width: 1190px) {
