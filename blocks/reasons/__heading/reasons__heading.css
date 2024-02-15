@@ -35,9 +35,9 @@
     }
 }
 
-@media screen and (max-width: 1190px) {
+@media screen and (max-width: 768px) {
     .reasons__heading {
-        font-size: 24px;
+        font-size: 20px;
     }
  
 }

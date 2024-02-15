@@ -173,7 +173,6 @@
         </div>
       </section>
       <section class="content">
-        <div class="content__lens"></div>
         <div class="container">
           <div class="arrowheading content__arrowheading">
             <img
@@ -507,7 +506,7 @@
       </section>
       <section class="karkasdesign">
         <div class="container">
-          <div class="arrowheading">
+          <div class="arrowheading karkasdesign__arrowheading">
             <img
               src="./images/arrow-right.svg"
               alt="стрелка"
@@ -629,7 +628,7 @@
         </div>
       </section>
     </main>
-    <!-- Slider main container -->
+    
 
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
     <script>
@@ -649,6 +648,17 @@
           el: ".swiper-pagination",
           clickable: true,
         },
+        breakpoints: {
+        900: {
+          slidesPerView: 2,
+        },
+        1050: {
+          slidesPerView: 2.3,
+        },
+        1190: {
+          slidesPerView: 2.8,
+        },
+      }
       });
     </script>
   </body>
