@@ -16,7 +16,9 @@
 
 @media screen and (max-width: 768px) {
     .projectcard {
+        min-width: 342px;
         max-width: 342px;
+        padding: 32px 32px 82px 24px;
         height: 507px;
         /* position: static; */
     }
